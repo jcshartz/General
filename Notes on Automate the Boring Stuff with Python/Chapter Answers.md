@@ -303,106 +303,63 @@ Q:
 
 2. How would you assign the value 'hello' as the third value in a list stored in a variable named spam? (Assume spam contains [2, 4, 6, 8, 10].)
 
-For the following three questions, let’s say spam contains the list ['a', 'b', 'c', 'd'].
-
 A: 
 
 spam[2] = "hello"
 
-Q:
+**For the following three questions, let’s say spam contains the list ['a', 'b', 'c', 'd'].**
 
-3. What does spam[int(int('3' * 2) // 11)] evaluate to?
+**3. What does spam[int(int('3' * 2) // 11)] evaluate to**
 
-A: 
+*The fourth element of* ```spam```, ```spam[3]```*, which would evaluate to 'd' using the previous assignment of spam.*
 
-The fourth element of spam, spam[3], which would evaluate to 'd' using the previous assignment of spam.
+**4. What does** ```spam[-1]``` **evaluate to?**
 
-Q:
+*Negitive indices start from -1 and the last index in the array. Using the previously defined spam vairable,*
+```spam[-1] == 'd'```
 
-4. What does spam[-1] evaluate to?
+**5. What does spam[:2] evaluate to?**
 
-A: 
+**A:** ```spam[:2] == ['a', 'b']```
 
-Negitive indices start from -1 and the last index in the array. Using the previously defined spam vairable, 
-spam[-1] == 'd'
+**For the following three questions, let’s say bacon contains the list ```[3.14, 'cat', 11, 'cat', True]```.**
 
-Q:
+**6. What does ```bacon.index('cat')``` evaluate to?***
 
-5. What does spam[:2] evaluate to?
+*Since index returns the first instance of a element occurance,* ```bacon.index('cat')``` *would return 1*
 
-A:
+**7. What does ```bacon.append(99)``` make the list value in bacon look like?**
 
-spam[:2] == ['a', 'b']
+*Using* ```bacon == [3.14, 'cat', 11, 'cat', True]```
 
-For the following three questions, let’s say bacon contains the list [3.14, 'cat', 11, 'cat', True].
+**A:** ```[3.14, 'cat', 11, 'cat', True, 99]```
 
-Q:
+**8. What does ```bacon.remove('cat')``` make the list value in bacon look like?**
 
-6. What does bacon.index('cat') evaluate to?
+*Using* ```bacon == [3.14, 'cat', 11, 'cat', True]```
 
-A:
+**A:** ```bacon == [3.14, 11, 'cat', True]```
 
-Since index returns the first instance of a element occurance, bacon.index('cat') would return 1
+**9. What are the operators for list concatenation and list replication?**
 
-Q:
+	The plus sign, +, and the asterisk sign, *.
 
-7. What does bacon.append(99) make the list value in bacon look like?
+**10. What is the difference between the ```append()``` and ```insert()``` list methods?**
 
-A:
+```append()``` *inserts an element at the end of the list.* ```insert()``` *inserts an element at the specified index*
 
-Using bacon == [3.14, 'cat', 11, 'cat', True]
+**11. What are two ways to remove values from a list?**
 
-[3.14, 'cat', 11, 'cat', True, 99]
 
-Q:
 
-8. What does bacon.remove('cat') make the list value in bacon look like?
+**12. Name a few ways that list values are similar to string values.**
 
-A:
+**13. What is the difference between lists and tuples?**
 
-Using bacon == [3.14, 'cat', 11, 'cat', True]
+**14. How do you type the tuple value that has just the integer value 42 in it?**
 
-bacon == [3.14, 11, 'cat', True]
+**15. How can you get the tuple form of a list value? How can you get the list form of a tuple value?**
 
-Q:
+**16. Variables that “contain” list values don’t actually contain lists directly. What do they contain instead?**
 
-9. What are the operators for list concatenation and list replication?
-
-A: 
-
-The plus sign, +, and the asterisk sign, *.
-Q:
-
-10. What is the difference between the append() and insert() list methods?
-
-A:
-
-append() inserts an element at the end of the list. insert() inserts an element at the specified index
-
-Q:
-
-11. What are two ways to remove values from a list?
-
-Q:
-
-12. Name a few ways that list values are similar to string values.
-
-Q:
-
-13. What is the difference between lists and tuples?
-
-Q:
-
-14. How do you type the tuple value that has just the integer value 42 in it?
-
-Q:
-
-15. How can you get the tuple form of a list value? How can you get the list form of a tuple value?
-
-Q:
-
-16. Variables that “contain” list values don’t actually contain lists directly. What do they contain instead?
-
-Q:
-
-17. What is the difference between copy.copy() and copy.deepcopy()?
+**17. What is the difference between ```copy.copy()``` and ```copy.deepcopy()```?**
