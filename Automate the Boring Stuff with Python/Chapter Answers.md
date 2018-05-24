@@ -350,16 +350,38 @@ spam[2] = "hello"
 
 **11. What are two ways to remove values from a list?**
 
-
+*```list```*```.remove(```*```value```*```)``` 
+*and* 
+```del``` *```list```*```[```*```index_of_value```*```]```
 
 **12. Name a few ways that list values are similar to string values.**
 
++ *You can retrieve a character of a string or an element of a list through similar methods:* *```string```*```[```*```index_of_character```*```]``` *and* *```list```*```[```*```index_of_element```*```]```
++ *You can retrieve a subsection of a string or a list through similar methods:* *```string```*```[```*```begining_index```*```:```*```end_index_+_1```*```]``` *and* *```list```*```[```*```begining_index```*```:```*```end_index_+_1```*```]```
+
+
 **13. What is the difference between lists and tuples?**
+
+*Lists are mutable, as in the elements can be changed after creation. Tuples are not mutable*
+
+*Jay's notes: see this StackOverflow* [answer](https://stackoverflow.com/a/626871/2649596) *and this* [answer](https://stackoverflow.com/a/1708610/2649596) *for more insight on when to use lists or tuples. Don't worry if it seems to be esoteric right, the utility of each will become more obvious as you go on.*
 
 **14. How do you type the tuple value that has just the integer value 42 in it?**
 
+```(42,)```
+
 **15. How can you get the tuple form of a list value? How can you get the list form of a tuple value?**
+
+*You can convert a tuple to a list or a list to a tuple using the following built-in functions:*
+
+```tuple(```*```list_to_convert```*```)```
+
+```list(```*```tuple_to_convert```*```)```
 
 **16. Variables that “contain” list values don’t actually contain lists directly. What do they contain instead?**
 
+*Memory references to those lists*
+
 **17. What is the difference between ```copy.copy()``` and ```copy.deepcopy()```?**
+
+```copy.copy()``` *only copies the top level of a list to another list. If that list contains other lists,* ```copy.copy()``` *will only copy the references to those other lists.* ```copy.deepcopy()``` *will copy all values of any embedded lists.*
